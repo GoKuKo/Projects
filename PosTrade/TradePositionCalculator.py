@@ -37,11 +37,8 @@ class TradePositionCalculator:
   
   def getOpenPosition(self):
     return self.openPosition
-	
-	
-	
-	
-	
+
+
 stockAcalculator = TradePositionCalculator()
 
 with open('G:/projects/py/testFiles/trades.txt') as f:
