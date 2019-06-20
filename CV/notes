@@ -1,0 +1,3 @@
+opencv uses the BRG color notation unlike the standard RBG notation used in matplotlib and others.
+Thresholding- converting a greyscale image to a binary image https://en.wikipedia.org/wiki/Thresholding_(image_processing)
+High and Low frequencies in an image- https://www.quora.com/What-are-the-low-and-high-frequencies-in-an-image
