@@ -1,9 +1,8 @@
-from pyimagesearch.transform import four_point_transform
-from skimage.filters import threshold_local
-import numpy as np
-import argparse
+# from pyimagesearch.transform import four_point_transform
 import cv2
 import imutils
+from skimage.filters import threshold_local
+
 
 #ap = argparse.ArgumentParser()
 #ap.add_argument("-i", "--image", required = True,
@@ -57,8 +56,8 @@ class Scanner():
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
-        warped = four_point_transform(orig, screenCnt.reshape(4, 2) * ratio)
-
+        # warped = four_point_transform(orig, screenCnt.reshape(4, 2) * ratio)
+        warped = None
         warped = cv2.cvtColor(warped, cv2.COLOR_BGR2GRAY)
         T = threshold_local(warped, 11, offset=10, method="gaussian")
         warped = (warped > T).astype("uint8") * 255
